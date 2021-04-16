@@ -1,0 +1,64 @@
+/* 全般設定 */
+
+html{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+/* 全般設定終了 */
+
+
+/* ヘッダーメニューの設定 */
+
+.header-bar{
+    display: flex;
+    align-items: center;
+    top: 0;
+    background-color: #c4c4c2;
+}
+
+.header-bar h1{
+    list-style: none;
+    margin: 0 0;
+    text-align: left;
+}
+
+.header-bar a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+/* ヘッダーナビゲーションの設定 */
+.header-nav{
+    margin: auto 30px;
+
+}
+
+.header-nav ul{
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 6px;
+	list-style-type: none;
+}
+
+.header-nav li{
+    margin: 0 0 0 15px;
+    font-size: 15px;
+}
+/* ヘッダーナビゲーションの終了 */
+/* ヘッダーメニューの設定終了 */
+
+/* 聖杯レイアウト ヘッダーなし*/
+div{
+    display: flex;
+}
+
+
+
+footer{
+
+}
