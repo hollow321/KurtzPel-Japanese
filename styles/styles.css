@@ -5,7 +5,8 @@ html{
 }
 body{
     min-height: 100vh;
-    width: 800px;
+    width: auto;
+    /* width: 1600px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,9 +17,10 @@ body{
 /* ヘッダーメニューの設定 */
 
 .header-bar{
+    height: 80px;
     display: flex; 
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #c4c4c2;
 }
 
@@ -59,20 +61,32 @@ div{
     display: flex;
     flex: 1;
 }
-
+/* 中央 */
 main{
     flex:1;
 }
-
-nav{
-    width: 150;
+/*左側*/
+nav{ 
+    width: 300px;
 }
-
+/* 右側 */
 aside{
-    width: 200px;
+    width: 300px;
 }
 /* ナビゲーションの設定終了 */
 
+/* フッターの設定 */
 footer{
     height: 80px;
 }
+/* フッターの設定終了 */
+
+/* 多分特定のサイズになったらリサイズってやつ */
+@media screen and (max-width: 900px){
+    body,nav,aside{
+        width: 100%;
+    }
+}
+/* 多分特定のサイズになったらリサイズってやつ終了 */
+
+/* 基本のボックスシャドー */
