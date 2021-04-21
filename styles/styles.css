@@ -82,9 +82,19 @@ aside{
 /* ナビゲーションの設定終了 */
 
 /* フッターの設定 */
-footer{
+
+.footer-bar{
     height: 80px;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
 }
+
+.footer-bar p{
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* フッターの設定終了 */
 
 /* 多分特定のサイズになったらリサイズってやつ */
