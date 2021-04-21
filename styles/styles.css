@@ -12,23 +12,29 @@ body{
     flex-direction: column;
 
 }
+header{
+}
 
 /* 全般設定終了 */
 /* ヘッダーメニューの設定 */
 
 .header-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
     height: 80px;
     display: flex; 
     align-items: center;
     justify-content: space-around;
     background-color: #c4c4c2;
+
 }
 
 .header-bar h1{
     list-style: none;
     margin: 0 0;
-    text-align: left;
-}
+} 
 
 .header-bar a{
     text-decoration: none;
@@ -90,3 +96,6 @@ footer{
 /* 多分特定のサイズになったらリサイズってやつ終了 */
 
 /* 基本のボックスシャドー */
+.header-box-shadow{
+    /* box-shadow: ; */
+}
