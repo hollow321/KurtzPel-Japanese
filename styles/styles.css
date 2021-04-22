@@ -9,7 +9,6 @@ body{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
 }
 header{
 }
@@ -27,7 +26,6 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: #c4c4c2;
-
 }
 
 .header-bar h1{
@@ -84,6 +82,15 @@ header{
 }
 /* ナビゲーションの設定終了 */
 
+/* ヘッダー画像の設定 */
+.header-image{
+    background: url(../imags/wallpaper/KurtzPel_1.png) center/cover;
+    padding-top: 50px;
+    position: relative;
+    height: 50vh;
+}
+/* ヘッダー画像の終了 */
+
 /* フッターの設定 */
 .footer-bar{
     height: 80px;
@@ -93,6 +100,7 @@ header{
 }
 
 .footer-bar p{
+    color: white;
     display: flex;
     justify-content: flex-start;
     margin: 16px 16px;
