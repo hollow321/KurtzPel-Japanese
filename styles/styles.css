@@ -93,6 +93,7 @@ aside{
 .footer-bar p{
     display: flex;
     justify-content: flex-start;
+    margin: 16px 16px;
 }
 
 /* フッターの設定終了 */
