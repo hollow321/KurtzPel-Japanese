@@ -66,19 +66,21 @@ header{
     display: flex;
     align-items: stretch;
     flex: 1;
-    padding-top: 50px;
 }
 /* 中央 */
-main{
+.layout main{
     flex:1;
+    padding-top: 50px;
 }
 /*左側*/
-nav{ 
+.layout nav{ 
     width: 300px;
+    padding-top: 50px;
 }
 /* 右側 */
-aside{
+.layout aside{
     width: 300px;
+    padding-top: 50px;
 }
 /* ナビゲーションの設定終了 */
 
