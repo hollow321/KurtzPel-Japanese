@@ -89,6 +89,16 @@ header{
     position: relative;
     height: 50vh;
 }
+.header-image small{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-image a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* ヘッダー画像の終了 */
 
 /* フッターの設定 */
