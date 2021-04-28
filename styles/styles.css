@@ -81,6 +81,8 @@ header{
     justify-content: space-around;
     background-color: #444444;
     opacity: 0.5;
+
+    box-shadow: 2px 2px 4px 4px dimgray;
 }
 
 .header-bar h1{
@@ -183,8 +185,3 @@ header{
     }
 }
 /* 多分特定のサイズになったらリサイズってやつ終了 */
-
-/* 基本のボックスシャドー */
-.header-box-shadow{
-    /* box-shadow: ; */
-}
