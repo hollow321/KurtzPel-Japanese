@@ -29,7 +29,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 20000;
+    z-index: 4;
   }
   .spinner img{
     width: 360px;
@@ -71,15 +71,16 @@ header{
 
 /* ヘッダーメニューの設定 */
 .header-bar{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10000;
+    z-index: 3;
     height: 50px;
     display: flex; 
     align-items: center;
     justify-content: space-around;
-    background-color: #c4c4c2;
+    background-color: #444444;
+    opacity: 0.5;
 }
 
 .header-bar h1{
@@ -89,7 +90,8 @@ header{
 
 .header-bar a{
     text-decoration: none;
-    color: #4b4b4b;
+    color: blanchedalmond;
+    opacity: 1;
 }
 /* ヘッダーナビゲーションの設定 */
 .header-nav{
@@ -109,16 +111,19 @@ header{
 .header-nav li{
     margin: 0 0 0 15px;
     font-size: 15px;
+    color: blanchedalmond;
+    opacity: 1;
 }
 /* ヘッダーナビゲーションの終了 */
 /* ヘッダーメニューの設定終了 */
 
 /* ヘッダー画像の設定 */
 .header-image{
-    background: url(../imags/wallpaper/KurtzPel_1.png) center/cover;
-    /* padding-top: 50px; */
+    height: 100%;
+    width: 100%;
     position: relative;
-    height: 50vh;
+    overflow: hidden;
+    z-index: 2;
 }
 .header-image small{
     display: flex;
