@@ -68,7 +68,7 @@ header{
     top: 400px;
     font-family: 'Zen Dots', cursive;
     text-align: center;
-    color: blanchedalmond;
+    color: rgb(0, 255, 0);
     font-size: 24px;
     animation: KurtzPel-logoAnimation 1s 1;
   }
@@ -161,11 +161,17 @@ header{
 
 /* ヘッダー画像の設定 */
 .header-image{
-    height: auto;
     width: auto;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     z-index: 2;
+}
+
+.videoPlant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-image video{
