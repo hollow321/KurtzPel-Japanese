@@ -13,12 +13,21 @@
     <title>KurtzPel―偽りの世界</title>
 </head>
 <body>
+    <!-- 読み込み中の画面 -->
     <div id="loading">
         <div class="spinner">
             <img src="../KurtzPel-Japanese/imags/wallpaper/KurtzPel_2.png">
             <div class="text">Loading...</div>
         </div>
     </div>
+    <!-- 読み込み完了の画面 -->
+    <div id="loaded-logo">
+        <div class="KurtzPel-logo">
+            <img src="imags/Kurtzpel.png">
+            <div class="text2">Completed.</div>
+        </div>
+    </div>
+
     <header class="header-bar">
 
         <audio id="sound-file" preload="auto" autoplay loop controls controlsList="nodownload">
@@ -39,8 +48,8 @@
     </header>
 
     <header class="header-image">
-        <video id="movie-file" preload="auto" autoplay loop muted>
-            <source src="contents/video/header-intro.mp4" type="video/mp4"> cover / center
+        <video id="movie-file" preload="none" autoplay loop muted>
+            <source src="contents/video/header-intro.mp4" type="video/mp4">
         </video>
         <small class="credit">
             <a href="https://www.koggames.com/kurtzpel/">© KoG' Games</a>
