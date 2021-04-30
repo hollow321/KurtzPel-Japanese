@@ -28,9 +28,25 @@
 
     <header class="headerBar">
         <div class="headerBar-Left">
-            <audio id="sound-file" preload="auto" autoplay loop controls controlsList="nodownload">
+
+            <div class="AudioBtn">
+                <audio id="sound-file" preload="auto" autoplay loop>
+                    <source src="contents/bgm/header-intro.wav">
+                </audio>
+
+                <button id="SoundBtn">
+                    <p id="SoundBtn-text">ON</p>
+                </button>
+            </div>
+
+            <audio id="sound-file" preload="auto" autoplay loop>
                 <source src="contents/bgm/header-intro.wav" type="audio/wav">
             </audio>
+
+            <!-- <audio id="sound-file" preload="auto" autoplay loop controls controlsList="nodownload">
+                <source src="contents/bgm/header-intro.wav" type="audio/wav">
+            </audio> -->
+
             <img src="imags/KurtzPel_2.png">
             <nav class="header-nav">
                 <ul>
