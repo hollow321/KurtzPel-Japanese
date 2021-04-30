@@ -15,7 +15,7 @@ function loading(){
   },5000);
 }
 
-var isBtn = false;
+var isBtn = true;
 function SoundBtn(){
   document.getElementById('SoundBtn').addEventListener('click',function(){
 
