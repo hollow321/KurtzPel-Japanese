@@ -53,7 +53,6 @@ header{
     justify-content: center;
     transition: all 1s;
     background-color: black;
-
     position: fixed;
     z-index: 3;
   }
@@ -137,7 +136,7 @@ header{
     opacity: 1;
 }
 
-#SoundBtn{
+.headerBar-Left #SoundBtn{
     width: 100px;
     font-size: 12px;
     color: blanchedalmond;
@@ -148,7 +147,7 @@ header{
     border-radius: 20px;
 }
 
-#SoundBtn-text{
+.headerBar-Left #SoundBtn-text{
     margin: 0;
     padding: 0;
 }

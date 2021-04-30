@@ -18,21 +18,15 @@ function loading(){
 var isBtn = true;
 function SoundBtn(){
   document.getElementById('SoundBtn').addEventListener('click',function(){
-
     const audio = document.getElementById('sound-file');
     audio.volume=0.5
-
     if(!isBtn){
       document.getElementById('SoundBtn-text').textContent='ON'; 
       audio.play();
-
-      console.log(isBtn+"上");
       isBtn = true;
     }else if(isBtn === true){
       document.getElementById('SoundBtn-text').textContent='OFF';
       audio.pause();
-
-      console.log(isBtn+"下");
       isBtn = false;
     }
   });
