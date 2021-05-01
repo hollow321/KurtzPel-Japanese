@@ -19,14 +19,15 @@ var isBtn = true;
 function SoundBtn(){
   document.getElementById('SoundBtn').addEventListener('click',function(){
     const audio = document.getElementById('sound-file');
-    audio.volume=0.5
     if(!isBtn){
       document.getElementById('SoundBtn-text').textContent='ON'; 
       audio.play();
+      audio.volume=0.5
       isBtn = true;
     }else if(isBtn === true){
       document.getElementById('SoundBtn-text').textContent='OFF';
       audio.pause();
+      audio.volume=0.5
       isBtn = false;
     }
   });
