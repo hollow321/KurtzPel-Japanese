@@ -58,16 +58,6 @@ body{
     animation: KurtzPel-logoAnimation 1s 1;
   }
 
-  .text2{
-    position: relative;
-    top: 100px;
-    font-family: 'Zen Dots', cursive;
-    text-align: center;
-    color: rgb(0, 255, 0);
-    font-size: 24px;
-    animation: KurtzPel-logoAnimation 1s 1;
-  }
-
   .loaded {
     opacity: 0;
     visibility: hidden;
