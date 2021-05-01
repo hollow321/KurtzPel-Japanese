@@ -116,26 +116,26 @@ body{
     box-shadow: 2px 2px 4px 4px rgb(0, 0, 0);
 }
 
-.headerBar-Left{
+.headerBar-Menu{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.headerBar-Left img{
+.headerBar-Menu img{
     margin: auto 10px;
     width: 220px;
     position: relative;
     bottom: 8px;
 }
 
-.headerBar-Left a{
+.headerBar-Menu a{
     text-decoration: none;
     color: blanchedalmond;
     opacity: 1;
 }
 
-.headerBar-Left #SoundBtn{
+.headerBar-Menu #SoundBtn{
     margin: auto 10px;
     width: 100px;
     font-size: 12px;
@@ -147,23 +147,14 @@ body{
     border-radius: 20px;
 }
 
-.headerBar-Left #SoundBtn-text{
+.headerBar-Menu #SoundBtn-text{
     margin: 0;
     padding: 0;
 }
 
-.headerBar-Right{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 70px;
+.imgright{
+    margin-left: auto;
 }
-
-.headerBar-Right img{
-    width: 200px;
-}
-
 /* ヘッダーナビゲーションの設定 */
 .header-nav{
     margin: auto 10px;
