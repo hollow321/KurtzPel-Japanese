@@ -154,6 +154,8 @@ body{
 
 .imgright{
     margin-left: auto;
+    position: relative;
+    left: 10px;
 }
 /* ヘッダーナビゲーションの設定 */
 .header-nav{
