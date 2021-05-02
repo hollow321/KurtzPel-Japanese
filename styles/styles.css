@@ -92,7 +92,6 @@ body{
 
 /* ロード画面終了設定 */
 
-
 /* ヘッダーメニューの設定 */
 .headerBar{
     position: fixed;
@@ -167,7 +166,13 @@ body{
     font-size: 15px;
     color: blanchedalmond;
     opacity: 1;
+    transition: 0.5s;
 }
+
+.header-nav li:hover{
+    text-shadow: 1px 1px 5px #fddede;
+}
+
 /* ヘッダーナビゲーションの終了 */
 /* ヘッダーメニューの設定終了 */
 
@@ -243,7 +248,7 @@ body{
 
 /* 多分特定のサイズになったらリサイズってやつ */
 @media screen and (max-width: 900px){
-    body,nav,aside{
+    html{
         width: 100%;
     }
 }
