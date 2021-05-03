@@ -132,7 +132,12 @@ body{
     display: block;
     padding: 10px 0 10px;
     background-color: rgb(100, 183, 255);
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.headerBar-Menu #SoundBtn:hover{
+    box-shadow: 0 0 8px gray;
 }
 
 .headerBar-Menu #SoundBtn-text{
@@ -140,7 +145,8 @@ body{
     padding: 0;
 }
 
-.imgright{
+.headerBar-Menu .right-Menu{
+    display: flex;
     margin-left: auto;
     position: relative;
     left: 10px;
@@ -154,7 +160,6 @@ body{
 
 .header-nav ul{
 	display: flex;
-    justify-content: flex-end;
     align-items: flex-start;
 	margin: 0;
 	padding-left: 0px;
