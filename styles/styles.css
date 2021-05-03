@@ -178,6 +178,19 @@ body{
     text-shadow: 1px 1px 5px #fddede;
 }
 
+.header-nav li li{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.header-nav li:hover > ul > li{
+    opacity: 1;
+    height: 2rem;
+    overflow: visible;
+}
+
 /* ヘッダーナビゲーションの終了 */
 /* ヘッダーメニューの設定終了 */
 
