@@ -1,11 +1,21 @@
 <html lang="ja">
 <head>
+    <!-- 外部ファイル参照 -->
     <link rel="shortcut icon" href="imags/favicon/favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- フォント -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+    <!-- 外部ライブラリ参照 -->
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+
+    <!-- インポート -->
+    <link rel="stylesheet" href="styles/styles.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +23,8 @@
     <title>KurtzPel ― 偽りの世界</title>
 </head>
 <body>
+    
+    <!-- ロード画面 -->
     <div id="loading">
         <div class="spinner">
             <img src="../KurtzPel-Japanese/imags/wallpaper/KurtzPel_2.png">
@@ -25,13 +37,12 @@
         </div>
     </div>
 
+    <!-- ヘッダー -->
     <header class="headerBar">
         <div class="headerBar-Menu">
-
             <a href="https://www.koggames.com/kurtzpel/" target="_blank">
                 <img src="imags/KurtzPel_2.png">
             </a>
-
             <div class="AudioBtn">
                 <audio id="sound-file" preload="auto" autoplay loop>
                     <source src="contents/bgm/header-intro.wav">
@@ -41,8 +52,7 @@
                     <p id="SoundBtn-text">ON</p>
                 </button>
             </div>
-
-            <div class="right-Menu">
+            <div class="left-Menu">
                 <nav class="header-nav">
                     <ul>
                         <li herf="#">HOME</li>
@@ -58,41 +68,49 @@
                         </li>
                     </ul>
                 </nav>
-
                 <a href="https://store.steampowered.com/app/844870/KurtzPel/" target="_blank">
                     <img src="imags/steam.jpg">
                 </a>
             </div>
-
         </div>
-
     </header>
-
     <header class="header-image">
-
         <div class="videoPlant">
             <video id="movie-file" preload="none" autoplay loop muted>
                 <source src="contents/video/header-intro.mp4" type="video/mp4">
             </video>
         </div>
-
-        <small class="credit">
-            <a href="https://www.koggames.com/kurtzpel/">© KoG' Games</a>
-        </small>
     </header>
+    
+    <div class="Overview">
+        <h2>嘘で成り立っている世界に、真実をもたらす</h2>
+        <p>
+            カーツペルと呼ばれる古代戦士の意志に基づいて設立された組織、
+            <br>「チェイス」のメンバーとして、ベラトス軍の聖戦を阻止せよ。
+        </p>
+    </div>
 
+    <div class="Overview-2">
+        <h1>混沌</h1>
+    </div>
+
+    <div class="Overview-3">
+        
+    </div>
+    
+    <!-- レイアウト -->
     <div class="layout">
         <nav>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aut natus perferendis voluptatem aperiam adipisci doloremque illo ea, tempora dicta sit necessitatibus illum ipsa ipsum cum, sed ex, architecto consequatur.</nav>
         <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et, possimus nesciunt repellendus illum ipsum rem dolor modi vero quos eius pariatur consectetur sit ullam nihil ipsa aspernatur. Id, quisquam.</main>
         <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam consequatur obcaecati officiis laboriosam beatae animi praesentium. Alias sint minima quod consequatur accusantium dolorem doloribus expedita, atque ipsam nemo. Repellendus?</aside>
     </div>
 
+    <!-- フッター -->
     <footer class="footer-bar">
         <p>
             ©2021 Hollow321. All rights reserved.
         </p>
     </footer>
-
     <script src="library/JQuery/jquery.min.js"></script>
     <script src="scripts/scripts.js"></script>
     

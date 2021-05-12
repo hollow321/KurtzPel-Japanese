@@ -27,7 +27,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 999;
   }
   .spinner img{
     width: 360px;
@@ -51,7 +51,9 @@ body{
     transition: all 1s;
     background-color: black;
     position: fixed;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    z-index: 998;
   }
 
   .KurtzPel-logo img{
@@ -97,7 +99,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 3;
+    z-index: 997;
     height: 60px;
     background-color: #1d1d1d;
     opacity: 0.7;
@@ -145,12 +147,13 @@ body{
     padding: 0;
 }
 
-.headerBar-Menu .right-Menu{
+.headerBar-Menu .left-Menu{
     display: flex;
     margin-left: auto;
     position: relative;
     left: 10px;
 }
+
 /* ヘッダーナビゲーションの設定 */
 .header-nav{
     margin: auto 10px;
@@ -199,8 +202,8 @@ body{
     width: auto;
     height: 100vh;
     position: relative;
-    overflow: hidden;
     z-index: 2;
+    overflow: hidden;
 }
 
 .videoPlant{
@@ -218,10 +221,71 @@ body{
     justify-content: flex-end;
 }
 
-.header-image a{
-    text-decoration: none;
-    color: #ffffff;
+.Overview{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 3;
 }
+
+.Overview h2,p{
+    color: white;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.Overview h2{
+    letter-spacing: 0.5em;
+
+}
+
+.Overview p{
+    font-size: 3em;
+}
+
+.Overview-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 3;
+
+}
+
+.Overview-2 h1{
+    color: white;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 10em;
+    writing-mode: vertical-rl;
+}
+
+.Overview-2 h1{
+    letter-spacing: 0.5em;
+    position: relative;
+    bottom: 80px;
+    left: 60px;
+}
+
+.Overview-3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 3;
+}
+
+
 
 /* ヘッダー画像の終了 */
 
