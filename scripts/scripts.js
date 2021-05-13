@@ -32,3 +32,12 @@ function SoundBtn(){
     }
   });
 }
+
+$('.open').click(function(){
+  $('.modal').fadeIn();
+  $('.mask').fadeIn();
+});
+$('.close').click(function(){
+  $('.modal').fadeOut();
+  $('.mask').fadeOut();
+});
