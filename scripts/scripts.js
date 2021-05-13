@@ -34,6 +34,9 @@ function SoundBtn(){
 }
 
 $('.open').click(function(){
+  const bgm = document.getElementById('sound-file');
+  document.getElementById('SoundBtn-text').textContent='OFF';
+  bgm.pause();
   $('.modal').fadeIn();
   $('.mask').fadeIn();
 });
