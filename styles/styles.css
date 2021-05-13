@@ -257,7 +257,6 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 3;
-
 }
 
 .Overview-2 h1{
@@ -280,12 +279,19 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     z-index: 3;
 }
 
+.Overview-3 img{
+    filter: invert(100%);
+    transition: 0.5s;
+}
 
+.Overview-3 img:hover{
+    transform: scale(1.5);
+}
 
 /* ヘッダー画像の終了 */
 
