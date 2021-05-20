@@ -321,8 +321,36 @@ body{
     display: none;
     z-index: 4;
 }
-
 /* ヘッダー画像の終了 */
+
+/* ニュース */
+.news{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.news img{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.news h1{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    margin: auto;
+
+    font-size: 4em;
+    letter-spacing: 0.2em;
+    font-family: 'Noto Serif JP', serif;
+}
+
 
 /* ナビゲーションの設定*/
 .layout{
