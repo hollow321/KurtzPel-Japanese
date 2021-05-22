@@ -351,6 +351,24 @@ body{
     font-family: 'Noto Serif JP', serif;
 }
 
+/* メニュー内スライド設定 */
+
+.slider .slide{
+    width: 498px;
+    height: 198px;
+    border: 1px solid #f00;
+    float: left;
+}
+
+.slider .slideSet{
+    width: 2500px;
+}
+
+.slider{
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
 
 /* ナビゲーションの設定*/
 .layout{

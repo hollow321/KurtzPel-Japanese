@@ -2,6 +2,8 @@
 window.onload = function() {
   SoundBtn();
   loading();
+  modal();
+  slide();
 }
 
 function loading(){
@@ -33,14 +35,25 @@ function SoundBtn(){
   });
 }
 
-$('.open').click(function(){
-  const bgm = document.getElementById('sound-file');
-  document.getElementById('SoundBtn-text').textContent='OFF';
-  bgm.pause();
-  $('.modal').fadeIn();
-  $('.mask').fadeIn();
-});
-$('.close').click(function(){
-  $('.modal').fadeOut();
-  $('.mask').fadeOut();
-});
+function modal(){
+  $('.open').click(function(){
+    const bgm = document.getElementById('sound-file');
+    document.getElementById('SoundBtn-text').textContent='OFF';
+    bgm.pause();
+    $('.modal').fadeIn();
+    $('.mask').fadeIn();
+  });
+  $('.close').click(function(){
+    $('.modal').fadeOut();
+    $('.mask').fadeOut();
+  });
+}
+
+function slide(){
+  const slideWidth = $('.slide').outerWidth();
+  const slideNum = $('.slide').length;
+  const slideSetWidth = slideWidth * slideNum;
+
+  $('.slideSet').css('width',slideSetWidth);
+
+}
