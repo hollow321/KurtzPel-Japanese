@@ -330,7 +330,7 @@ body{
     position: relative;
 }
 
-.news img{
+.newsWallpaper img{
     width: 100%;
     height: 80vh;
     background-size: cover;
@@ -353,6 +353,15 @@ body{
 
 /* メニュー内スライド設定 */
 
+.sliderPosition{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+
+}
+
 .slider {
     width: 500px;
     height: 200px;
@@ -372,6 +381,10 @@ body{
 
   .slider .slideSet {
     position: absolute;
+  }
+
+  .sliderBtn{
+      display: flex;
   }
 
 /* ナビゲーションの設定*/
