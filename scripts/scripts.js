@@ -50,10 +50,37 @@ function modal(){
 }
 
 function slide(){
+  var slideCurrent = 0;
   const slideWidth = $('.slide').outerWidth();
   const slideNum = $('.slide').length;
   const slideSetWidth = slideWidth * slideNum;
-
   $('.slideSet').css('width',slideSetWidth);
+
+  const sliding = function(){
+
+    if( slideCurrent < 0 ){
+      slideCurrent = slideNum - 1;
+
+    }else if( slideCurrent > slideNum - 1){ 
+      slideCurrent = 0;
+    }
+
+    $('.slideSet').animate({
+      left: slideCurrent * -slideWidth
+    });
+    $('.slideSet').stop().animate({
+      left: slideCurrent * -slideWidth
+    });
+  }
+
+  $('.slider-prev').click(function(){
+    slideCurrent--;
+    sliding();
+  });
+  $('.slider-next').click(function(){
+    slideCurrent++;
+    sliding();
+  });
+
 
 }
