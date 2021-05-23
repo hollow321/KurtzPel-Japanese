@@ -77,10 +77,16 @@ function slide(){
     slideCurrent--;
     sliding();
   });
-  $('.slider-next').click(function(){
-    slideCurrent++;
-    sliding();
-  });
 
+  $('.slider-next').ready(function(){
+    $('.slider-next').click(function(){
+      slideCurrent++;
+      sliding();
+    })
 
+    setInterval(() => {
+      slideCurrent++;
+      sliding();
+    }, 10000);
+  })
 }
