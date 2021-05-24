@@ -57,18 +57,13 @@ function slide(){
   $('.slideSet').css('width',slideSetWidth);
 
   const sliding = function(){
-
     if( slideCurrent < 0 ){
       slideCurrent = slideNum - 1;
-
     }else if( slideCurrent > slideNum - 1){ 
       slideCurrent = 0;
     }
 
     $('.slideSet').animate({
-      left: slideCurrent * -slideWidth
-    });
-    $('.slideSet').stop().animate({
       left: slideCurrent * -slideWidth
     });
   }
@@ -77,13 +72,11 @@ function slide(){
     slideCurrent--;
     sliding();
   });
-
   $('.slider-next').ready(function(){
     $('.slider-next').click(function(){
       slideCurrent++;
       sliding();
     })
-
     setInterval(() => {
       slideCurrent++;
       sliding();
