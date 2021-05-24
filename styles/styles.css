@@ -326,13 +326,13 @@ body{
 /* ニュース */
 .news{
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     position: relative;
 }
 
 .newsWallpaper img{
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     filter: brightness(60%);
