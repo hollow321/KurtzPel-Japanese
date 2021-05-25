@@ -94,6 +94,19 @@ body{
 
 /* ロード画面終了設定 */
 
+/* ページトップ移動設定 */
+
+.pagetop{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    filter: invert(100%);
+    z-index: 997;
+}
+
+/* ページトップ移動設定終了 */
+
 /* ヘッダーメニューの設定 */
 .headerBar{
     position: fixed;
@@ -355,7 +368,7 @@ body{
 /* メニュー内スライド設定 */
 
 .box{
-    background-color: rgba(136, 136, 136, 0.3);
+    background-color: rgba(82, 82, 82, 0.3);
     backdrop-filter: blur(10px);
     width: 1300px;
     height: 400px;
@@ -367,6 +380,7 @@ body{
     margin: auto;
     z-index: 1;
 }
+
 
 .sliderPosition{
     position: absolute;

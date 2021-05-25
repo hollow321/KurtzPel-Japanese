@@ -1,7 +1,8 @@
 ///<reference path="../library/JQuery/typings/globals/jquery/index.d.ts" />
 window.onload = function() {
-  SoundBtn();
   loading();
+  SoundBtn();
+  scroolE();
   modal();
   slide();
 }
@@ -15,6 +16,20 @@ function loading(){
   window.setTimeout(function(){
     logo.classList.add('loaded');
   },5000);
+}
+
+function scroolE(){
+  $(function(){
+    $(window).scroll(function(){
+      const s = $(this).scrollTop();
+      const m = 300;
+      if(s > m ){
+        $('.pagetop').fadeIn('slow');
+      }else if( s > m ){
+        $('.pagetop').fadeOut('slow');
+      }
+    });
+  });
 }
 
 var isBtn = true;
@@ -44,6 +59,10 @@ function modal(){
     $('.mask').fadeIn();
   });
   $('.close').click(function(){
+    $('.modal').fadeOut();
+    $('.mask').fadeOut();
+  });
+  $('.mask').click(function(){
     $('.modal').fadeOut();
     $('.mask').fadeOut();
   });
