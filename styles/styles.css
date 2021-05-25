@@ -103,6 +103,7 @@ body{
     right: 10px;
     filter: invert(100%);
     z-index: 997;
+    cursor: pointer;
 }
 
 /* ページトップ移動設定終了 */

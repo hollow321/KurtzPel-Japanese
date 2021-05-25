@@ -29,6 +29,11 @@ function scroolE(){
         $('.pagetop').fadeOut('slow');
       }
     });
+
+    $('.pagetop').click(function(){
+      $('body, html').animate({scrollTop: 0}, 800, 'swing');
+    });
+
   });
 }
 
