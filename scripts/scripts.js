@@ -21,11 +21,11 @@ function loading(){
 function scroolE(){
   $(function(){
     $(window).scroll(function(){
-      const s = $(this).scrollTop();
-      const m = 300;
+      var s = $(this).scrollTop();
+      var m = 200;
       if(s > m ){
         $('.pagetop').fadeIn('slow');
-      }else if( s > m ){
+      }else{
         $('.pagetop').fadeOut('slow');
       }
     });
