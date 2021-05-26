@@ -426,6 +426,46 @@ body{
       cursor: pointer;
   }
 
+  .updateContents{
+    color: white;
+    width: 600px;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 2;
+  }
+
+  .updateContents dt{
+    border-bottom:1px solid #ccc;
+    float:left;
+    padding:10px 5px;
+  }
+
+  .updateContents dd{
+    border-bottom:1px solid #ccc;
+    margin-left:100px;
+    padding:10px 5px;
+  }
+
+  .updateContents a{
+    background-color:red;
+    border-radius:5px;
+    color:#fff;
+    margin:0 20px;
+    padding:5px 15px;
+    text-decoration:none;
+  }
+
+  .ucontents1,.ucontents2,.ucontents3{
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+  }
+  .ucontents1:hover,.ucontents2:hover,.ucontents3:hover{
+    background-color: rgba(156, 156, 156, 0.356);
+  }
+
 /* メニュー内スライド設定終了 */
 
 /* ナビゲーションの設定*/
