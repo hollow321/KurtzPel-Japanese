@@ -99,11 +99,12 @@ body{
 .pagetop{
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 90px;
     right: 10px;
     filter: invert(100%);
     z-index: 997;
     cursor: pointer;
+    background-color: rgba(151, 151, 151, 0.596);
 }
 
 /* ページトップ移動設定終了 */
@@ -348,7 +349,7 @@ body{
 /* ゲームインフォ */
 .gameInfo{
     width: auto;
-    height: 80vh;
+    height: 97vh;
     overflow: hidden;
 }
 /* ゲームインフォ終了 */
