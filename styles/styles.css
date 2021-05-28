@@ -264,36 +264,23 @@ body{
 
 .Overview-2 {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index: 3;
-}
-
-.belatos{
-    filter: invert(100%);
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 13%;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
     z-index: 3;
 }
 
-.belatos img{
-    width: 70%;
+.Overview-2 h1{
+    color: white;
+    font-family: 'Noto Serif JP', serif;
+
+    font-size: 40px;
 }
 
-.Overview-2 h1{
-    letter-spacing: 0.5em;
-    position: relative;
-    bottom: 80px;
-    left: 60px;
+.Overview-2 p{
+    text-align: right;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .Overview-3{
