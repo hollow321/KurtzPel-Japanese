@@ -273,11 +273,19 @@ body{
     z-index: 3;
 }
 
-.Overview-2 h1{
+.belatos{
+    filter: invert(100%);
     color: white;
-    font-family: 'Sawarabi Mincho', sans-serif;
-    font-size: 10em;
-    writing-mode: vertical-rl;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 3;
+}
+
+.belatos img{
+    width: 70%;
 }
 
 .Overview-2 h1{
@@ -336,6 +344,14 @@ body{
     z-index: 4;
 }
 /* ヘッダー画像の終了 */
+
+/* ゲームインフォ */
+.gameInfo{
+    width: auto;
+    height: 80vh;
+    overflow: hidden;
+}
+/* ゲームインフォ終了 */
 
 /* ニュース */
 .news{
@@ -517,9 +533,5 @@ body{
 /* フッターの設定終了 */
 
 /* 多分特定のサイズになったらリサイズってやつ */
-@media screen and (max-width: 900px){
-    html{
-        width: 100%;
-    }
-}
+
 /* 多分特定のサイズになったらリサイズってやつ終了 */
