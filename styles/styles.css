@@ -4,7 +4,7 @@ html{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 body{
-    min-height: 200vh;
+    min-height: 400vh;
     width: auto;
     margin: 0 auto;
     display: flex;
@@ -338,7 +338,39 @@ body{
     width: auto;
     height: 97vh;
     overflow: hidden;
+    position: relative;
 }
+
+.gameTextInfo{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.gameTextInfo h1{
+    color:black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.gameTextInfo p{
+    color: black;
+    
+}
+
+.Youtube2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Youtube2 iframe{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+
 /* ゲームインフォ終了 */
 
 /* ニュース */
